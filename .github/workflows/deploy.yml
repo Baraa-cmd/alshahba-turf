@@ -26,11 +26,11 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: server64.shared.spaceship.host
-        username: ${{ secrets.FTP_USERNAME || secrets.USERNAME || 'Bro@al-shahbaa.dierhafer.site' }}
+        username: ${{ secrets.FTP_USERNAME || secrets.USERNAME || 'hdchovdooq' }}
         password: ${{ secrets.FTP_PASSWORD || secrets.PASSWORD || secrets.FTP_PASS || secrets.PASS || 'B135792468b@' }}
         port: 21
         local-dir: ./dist/
-        server-dir: ./
+        server-dir: ${{ secrets.FTP_SERVER_DIR || '/home/hdchovdooq/al-shahbaa.dierhafer.site/' }}
 
 
 
