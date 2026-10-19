@@ -27,7 +27,7 @@ jobs:
       with:
         server: server64.shared.spaceship.host
         username: ${{ secrets.FTP_USERNAME || secrets.USERNAME || 'Bro@al-shahbaa.dierhafer.site' }}
-        password: ${{ secrets.FTP_PASSWORD || secrets.PASSWORD || secrets.FTP_PASS || secrets.PASS || 'B135792468b' }}
+        password: ${{ secrets.FTP_PASSWORD || secrets.PASSWORD || secrets.FTP_PASS || secrets.PASS || 'B135792468b@' }}
         port: 21
         local-dir: ./dist/
         server-dir: ./
